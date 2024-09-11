@@ -78,7 +78,7 @@
         //│          │          │          │    `     │  ~       │   │  _       │  +       │  {       │  }       │  |       │
             &trans     &trans     &trans    &kp GRAVE  &kp TILDE      &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC   &kp PIPE
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
+                                             &trans     &trans         &trans     &kp DEL
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
