@@ -20,6 +20,12 @@
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
+         td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <140>;
+            bindings = <&kp H>, <&kp ESC>;
+        };
     };
 
     conditional_layers {
@@ -38,8 +44,8 @@
         //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ; :      │
-            HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SEMI)
+        //│  A       │  S       │  D       │  F       │  G       │   │  H, ESC  │  J       │  K       │  L       │ ; :      │
+            HRML(A,        S,         D,         F)     &kp G          &td0      HRMR(J,        K,         L,        SEMI)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
