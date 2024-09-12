@@ -14,10 +14,10 @@
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
-            tapping-term-ms = <220>;
-            quick-tap-ms = <150>;
-            require-prior-idle-ms = <100>;
+            flavor = "tab-preferred";
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            // require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
         };
          td0: tap_dance_0 {
