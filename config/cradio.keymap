@@ -19,7 +19,7 @@
             quick-tap-ms = <0>;
             bindings = <&kp>, <&kp>;
         };
-        hta: hold_tap {
+        hta: hold_tap_alt {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-unless-interrupted";
