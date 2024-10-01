@@ -33,13 +33,13 @@
             tapping-term-ms = <160>;
             bindings = <&kp Y>, <&kp ESC>;
         };
+        &lt {
+            flavor = "hold-preferred";
+            quick-tap-ms = <0>;
+            tapping-term-ms = <240>;
+        };
     };
 
-    &lt {
-        flavor = "hold-preferred";
-        quick-tap-ms = <0>;
-        tapping-term-ms = <240>;
-    };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
