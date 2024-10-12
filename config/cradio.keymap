@@ -33,6 +33,14 @@
             quick-tap-ms = <0>;
             bindings = <&kp>, <&kp>;
         };
+        hts: hold_tap_shift {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-prefered";
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            bindings = <&kp>, <&kp>;
+        };
          td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -59,7 +67,7 @@
             &kp Q      &kp W      &kp E      &kp R      &kp T          &td0      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ; :      │
-           &ht LSHFT A &hta LALT S &ht LCTRL D &ht LGUI F  &kp G       &kp H     &ht RGUI J &ht RCTRL K  &hta RALT L  &ht RSHFT SEMI
+           &hts LSHFT A &hta LALT S &ht LCTRL D &ht LGUI F  &kp G       &kp H     &ht RGUI J &ht RCTRL K  &hta RALT L  &hts RSHFT SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
