@@ -36,7 +36,7 @@
         hts: hold_tap_shift {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-prefered";
+            flavor = "hold-preferred";
             tapping-term-ms = <150>;
             quick-tap-ms = <0>;
             bindings = <&kp>, <&kp>;
