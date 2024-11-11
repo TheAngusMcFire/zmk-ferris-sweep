@@ -40,7 +40,7 @@
             tapping-term-ms = <400>;
             quick-tap-ms = <150>;
             bindings = <&kp>, <&kp>;
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <140>;
         };
          td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
